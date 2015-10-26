@@ -19,7 +19,7 @@
 		</div>
 		<div class="col-md-6">
 			<nav class="main-nav nav nav-pills nav-stacked">
-				<ul  class="nav nav-pills nav-stacked">
+				<ul  class="nav nav-pills nav-stacked main-nav">
 					<li><a href="http://">Home</a></li>
 					<li><a href="http://">About</a></li>
 					<li><a href="http://">Contact</a></li>
