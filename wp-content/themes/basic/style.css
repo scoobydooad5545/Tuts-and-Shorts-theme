@@ -24,9 +24,13 @@ ul{
 	color:#46a5a6;
 	font-size:90px;
 }
-.second-title {
+.second-logo {
 	font-family: 'Fira Sans', sans-serif;
+	color:#46a5a6;
+	font-size:24px;
+	font-weight:400;
 }
+
 .tabs a {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight:500;
