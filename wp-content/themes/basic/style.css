@@ -3,11 +3,33 @@
   Version: 1
   Author: Alyssa
 */
-
+ul{
+	list-style:none;
+}
 .header-bckgnd {
 	background-color:#4f0c2f;
 }
-.second-nav {
-	background-color:#46a5a6;
+.nav-pills a {
+	color:white;
 }
-font-family: 'Lobster', cursive;
+.second-nav {
+	/*background-color:#46a5a6;*/
+}
+.logo-title {
+	font-family: 'Lobster', cursive;
+	color:white;
+	font-size:90px;
+}
+.ampersand {
+	color:#46a5a6;
+	font-size:90px;
+}
+.second-title {
+	font-family: 'Fira Sans', sans-serif;
+}
+.tabs a {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:500;
+	background-color:#46a5a6;
+	color:white;
+}
