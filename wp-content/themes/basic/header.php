@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+	<?php wp_head();?>
+</head>
+<body>
+  <div class="container header-bckgnd">
+	<div class="row">
+		<nav class="main-nav nav nav-pills nav-stacked">
+			<ul>
+				<li><a href="http://">Home</a></li>
+				<li><a href="http://">About</a></li>
+				<li><a href="http://">Contact</a></li>
+				<li><a href="http://">Advertise with Us</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="row second-nav">
+		<div>
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">PHOTOSHOP</a></li>
+		    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">ILLUSRATOR</a></li>
+		    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">HTML/CSS</a></li>
+		    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SHORTCUTS</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+		    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+		    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+		    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+		  </div>
+
+		</div>
+	</div>
