@@ -47,6 +47,20 @@ ul{
 }
 .nav-tabs {
 	background-color:#46a5a6;
+	border:none;
+}
+.nav-tabs ul {
+	
+}
+.nav-tabs ul li {
+     display: inline;
+     margin-right: .75em;
+     text-align:center;
+}
+.nav-tabs>li.active>a {
+	background-color:#46a5a6;
+	color:white;
+	border:none;
 }
 .tabs a {
 	font-family: 'Fira Sans', sans-serif;
