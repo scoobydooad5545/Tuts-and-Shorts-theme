@@ -8,7 +8,7 @@ ul{
 }
 .header-bckgnd {
 	background-color:#4f0c2f;
-	height:213px;
+	
 }
 .nav-pills a {
 	color:white;
@@ -19,7 +19,7 @@ ul{
 	font-size:20px;
 	font-weight:400;
 	line-height:10px;
-	margin-top:15px;
+	/*margin-top:15px;*/
 }
 .nav > li > a:hover{
 	background-color:#46a5a6;
@@ -31,6 +31,8 @@ ul{
 	font-family: 'Lobster', cursive;
 	color:white;
 	font-size:90px;
+	line-height:85px;
+	margin-bottom:15px;
 }
 .ampersand {
 	color:#46a5a6;
@@ -41,6 +43,7 @@ ul{
 	color:#46a5a6;
 	font-size:24px;
 	font-weight:400;
+	margin-top:15px;
 }
 .nav-tabs {
 	background-color:#46a5a6;
