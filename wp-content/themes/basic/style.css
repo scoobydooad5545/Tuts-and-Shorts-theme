@@ -84,6 +84,7 @@ ul li.active {border-bottom:0;}
 	font-weight:500;
 	background-color:#46a5a6;
 	color:white;
+	font-size:21px;
 }
 
 
@@ -91,9 +92,28 @@ ul li.active {border-bottom:0;}
 /*       Footer CSS        */
 #footer {
 	background-color:#160225;
+	height:440px;
 }
-
-
+.footer-titles {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:500;
+	color:#45a5a6;
+	font-size:24px;
+	margin-left:40px;
+}
+.footer-links {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:300;
+	font-size:16px;
+	color:white;
+}
+.footer-links>li>a {
+	text-decoration:none;
+	color:white;
+}
+.footer-links>li>a:hover {
+	color:#45a5a6;
+}
 
 
 
