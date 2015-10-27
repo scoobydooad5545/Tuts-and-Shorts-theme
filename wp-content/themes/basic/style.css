@@ -75,7 +75,7 @@ ul li.active {border-bottom:0;}
 .nav-tabs>li:hover a,
 .nav-tabs>li.active:hover a,
 .nav-tabs>li.active.tabs > a,
-.nav-tabs>li.active.tabs:hover a {
+.nav-tabs>li.active.tabs:hover > a {
 	border:0px;
 }
 
@@ -85,3 +85,22 @@ ul li.active {border-bottom:0;}
 	background-color:#46a5a6;
 	color:white;
 }
+
+
+
+/*       Footer CSS        */
+#footer {
+	background-color:#160225;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,7 +17,7 @@
 		<div class="col-md-6">
 			<p><span class="logo-title">Tuts <span class="ampersand">&</span> Shorts</span><br/><span class="second-logo">Graphic and Web Design Tutorials and Shortcuts</span></p>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 hidden-xs">
 			<nav class="main-nav nav nav-pills nav-stacked">
 				<ul  class="nav nav-pills nav-stacked main-nav">
 					<li><a href="http://">Home</a></li>
