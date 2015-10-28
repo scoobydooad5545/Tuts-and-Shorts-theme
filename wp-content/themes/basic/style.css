@@ -126,17 +126,23 @@ ul li.active {border-bottom:0;}
 
 /*       About CSS        */
 .about-image {
-	margin-left:535px;
+	/*margin-left:535px;*/
 	margin-bottom:30px;
+	margin:0px auto 30px auto;
 }
 .about-links {
-	margin-bottom:37px;
+	margin-bottom:25px;
 }
 .about-info-t {
-
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:500;
+	font-size:35px;
 }
 .about-info-p {
-
+	margin-bottom:69px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:300;
+	font-size:25px;
 }
 
 
