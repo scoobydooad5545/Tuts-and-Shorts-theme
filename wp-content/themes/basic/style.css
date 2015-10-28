@@ -3,6 +3,8 @@
   Version: 1
   Author: Alyssa
 */
+h1 {color:#46a5a6;
+	text-align:center;}
 ul{
 	list-style:none;
 }
@@ -35,6 +37,7 @@ ul li.active {border-bottom:0;}
 	line-height:85px;
 	margin-bottom:15px;
 	padding-top:35px;
+	margin-right:30px;
 }
 .ampersand {
 	color:#46a5a6;
@@ -47,7 +50,8 @@ ul li.active {border-bottom:0;}
 	font-weight:400;
 	margin-top:15px;
 }
-.nav-tabs {
+
+.nav-tabs, .nav-justified {
 	background-color:#46a5a6;
 	border:none;
 }
@@ -58,6 +62,7 @@ ul li.active {border-bottom:0;}
      display: inline;
      margin-right: .75em;
      text-align:center;
+     border:0px;
 }
 .nav-tabs>li.active>a {
 	background-color:#46a5a6;
@@ -77,6 +82,8 @@ ul li.active {border-bottom:0;}
 .nav-tabs>li.active.tabs > a,
 .nav-tabs>li.active.tabs:hover > a {
 	border:0px;
+	background-color:#368788;
+	color:white;
 }
 
 .tabs a {
@@ -90,9 +97,9 @@ ul li.active {border-bottom:0;}
 
 
 /*       Footer CSS        */
-#footer {
+.footer {
 	background-color:#160225;
-	height:440px;
+	
 }
 .footer-titles {
 	font-family: 'Fira Sans', sans-serif;
@@ -106,6 +113,7 @@ ul li.active {border-bottom:0;}
 	font-weight:300;
 	font-size:16px;
 	color:white;
+	line-height:29px;
 }
 .footer-links>li>a {
 	text-decoration:none;
@@ -114,6 +122,7 @@ ul li.active {border-bottom:0;}
 .footer-links>li>a:hover {
 	color:#45a5a6;
 }
+
 
 
 

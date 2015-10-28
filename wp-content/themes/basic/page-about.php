@@ -8,7 +8,7 @@ Template Name: About Page
 
   	<h1><?php the_title(); ?></h1>
  	<?php the_content(); ?>
-
+	
 
   <?php endwhile; else: ?>
     <p>Sorry, no pages matched your criteria.</p>

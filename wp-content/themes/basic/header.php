@@ -15,15 +15,15 @@
   <div class="container-fluid">
 	<div class="row header-bckgnd">
 		<div class="col-md-6">
-			<p><span class="logo-title">Tuts <span class="ampersand">&</span> Shorts</span><br/><span class="second-logo">Graphic and Web Design Tutorials and Shortcuts</span></p>
+			<p><span class="logo-title" style="margin-left:20px; margin-bottom:15px;">Tuts <span class="ampersand">&</span> Shorts</span><br/><span class="second-logo">Graphic and Web Design Tutorials and Shortcuts</span></p>
 		</div>
 		<div class="col-md-6 hidden-xs">
 			<nav class="main-nav nav nav-pills nav-stacked">
 				<ul  class="nav nav-pills nav-stacked main-nav">
-					<li><a href="http://">Home</a></li>
-					<li><a href="http://">About</a></li>
-					<li><a href="http://">Contact</a></li>
-					<li><a href="http://">Advertise with Us</a></li>
+					<li><a href="http://localhost/blog2/">Home</a></li>
+					<li><a href="http://localhost/blog2/about/">About</a></li>
+					<li><a href="http://localhost/blog2/contact/ ">Contact</a></li>
+					<li><a href="http://localhost/blog2/advertise-with-us/">Advertise with Us</a></li>
 				</ul>
 			</nav>
 		</div>
