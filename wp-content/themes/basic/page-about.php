@@ -15,7 +15,7 @@ Template Name: About Page
  	<?php the_content(); ?>
 	</div>
 	<div class="col-md-3">
-		
+		<?php get_sidebar(); ?>
 	</div>
 	
 </div>

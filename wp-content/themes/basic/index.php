@@ -40,7 +40,7 @@
 		echo '<div class="col-md-7 ">';
 	}
 	elseif (get_field('columns') == '2'){
-		echo '<div class="col-md-5 col2">';
+		echo '<div class="col-md-4 col2">';
 	}
 	elseif (get_field('columns') == '3') {
 		echo '<div class="col-md-5 col3">';
@@ -121,7 +121,9 @@
 			</div>
 
 		</figure>
-
+		<div class="col-md-1  hidden-xs hidden-sm">
+			
+		</div>
 	</div><!--closes row-->
 	
 
@@ -549,5 +551,7 @@
 <?php if(have_posts()): while (have_posts()) : the_post(); ?>      
 
 <?php endwhile; endif; ?>
-
+		<script>
+		
+		  </script>
 <?php get_footer(); ?>

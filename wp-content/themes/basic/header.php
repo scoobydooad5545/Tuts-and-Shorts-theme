@@ -42,7 +42,7 @@
 		<div>
 		  <!-- Nav tabs -->
 		  <ul class="nav nav-tabs nav-justified" role="tablist">
-		    <li role="presentation" class="active tabs"><a href="http://localhost/blog2/index.php#tab_tabid1#tab_home" aria-controls="home" role="tab" data-toggle="tab">PHOTOSHOP</a></li>
+		    <li role="presentation" class="active tabs"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">PHOTOSHOP</a></li>
 		    <li role="presentation" class="tabs"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">ILLUSTRATOR</a></li>
 		    <li role="presentation" class="tabs"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">HTML/CSS</a></li>
 		    <li role="presentation" class="tabs"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SHORTCUTS</a></li>
