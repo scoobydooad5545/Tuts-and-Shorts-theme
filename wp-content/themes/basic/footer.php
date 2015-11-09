@@ -4,21 +4,23 @@
 			<div class="col-md-4">
 				<p class="footer-titles">Pages</p>
 				<ul class="footer-links">
-					<li><a href="http://localhost/blog2">Home</a></li>
-					<li><a href="http://localhost/blog2/about/">About</a></li>
-					<li><a href="http://localhost/blog2/contact/">Contact</a></li>
-					<li><a href="http://localhost/blog2/advertise-with-us/">Advertise with Us</a></li>
+					<li><a href="<?php bloginfo('url');?>/">Home</a></li>
+					<li><a href="<?php bloginfo('url');?>/about/">About</a></li>
+					<li><a href="<?php bloginfo('url');?>/contact/">Contact</a></li>
+					<li><a href="<?php bloginfo('url');?>/advertise-with-us/">Advertise with Us</a></li>
 				</ul>
 			</div>
 			
 			<div class="col-md-4">
-				<p class="footer-titles">Archives</p>
+				<p class="footer-titles">Contact Me</p>
 				<ul class="footer-links">
-					<li><a href="">October 2015</a></li>
+					<li>Alyssa Davis</li>
+					<li><a href="mailto:alyssa.davis@viscomcenter.com">alyssa.davis@viscomcenter.com</a></li>
+					<li><a href="http://alyssadavisdesign.com/" target="_blank">alyssadavisdesign.com</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
-				<p class="footer-titles">Get In Touch</p>
+				
 			</div>
 		</div>
 	</div>
@@ -28,53 +30,37 @@
 				<div class="col-xs-12">
 					<p class="footer-titles">Pages</p>
 						<ul class="footer-links">
-							<li><a href="http://localhost/blog2">Home</a></li>
-							<li><a href="http://localhost/blog2/about/">About</a></li>
-							<li><a href="http://localhost/blog2/contact/">Contact</a></li>
-							<li><a href="http://localhost/blog2/advertise-with-us/">Advertise with Us</a></li>
+							<li><a href="<?php bloginfo('url');?>/">Home</a></li>
+							<li><a href="<?php bloginfo('url');?>/about/">About</a></li>
+							<li><a href="<?php bloginfo('url');?>/contact/">Contact</a></li>
+							<li><a href="<?php bloginfo('url');?>/advertise-with-us/">Advertise with Us</a></li>
 						</ul>
 					<p><span class="footer-copy">&copy;Tuts & Shorts, created by Alyssa Davis</span></p>
 				</div>
 
-				<script type="text/javascript">
-		        jQuery(document).ready(function() {
-		            var hash = document.location.hash;
-		            var prefix = "tab_";
-		            if (hash) {
-		                var tab = jQuery(hash.replace(prefix,"")).attr('href');
-		                jQuery('.nav-tabs a[href='+tab+']').tab('show');
-		            }
-		        });
-		        </script>
-		        <script>
-		        $(function(){
-				  var hash = window.location.hash;
-				  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 
-				  $('.nav-tabs a').click(function (e) {
-				    $(this).tab('show');
-				    var scrollmem = $('body').scrollTop();
-				    window.location.hash = this.hash;
-				    $('html,body').scrollTop(scrollmem);
-				  });
-				});
-				</script>
-				<script>
-				jQuery(document).ready(function($){
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
 	
-					// Allow Page URL to activate a tab's ID
-					var taburl = document.location.toString();
-					if( taburl.match('#') ) {
-						$('.nav-tabs a[href=#'+taburl.split('#')[1]+']').tab('show');
-					}
 
-					// Allow internal links to activate a tab.
-					$('a[data-toggle="tab"]').click(function (e) {
-						e.preventDefault();
-						$('a[href="' + $(this).attr('href') + '"]').tab('show');
-					})
 
-				}); // End</script>
+				<script type="text/javascript">
+
+		       // Javascript to enable link to tab
+				var url = document.location.toString();
+				if (url.match('#')) {
+
+				    $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+				} 
+
+				// Change hash for page-reload
+				$('.nav-tabs a').on('shown.bs.tab', function (e) {
+				    window.location.hash = e.target.hash;
+				})
+
+		        </script>
+		       
       
 </div><!-- x content -->
 </body>

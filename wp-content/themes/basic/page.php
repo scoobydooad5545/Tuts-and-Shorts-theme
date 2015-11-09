@@ -8,7 +8,7 @@
 
 <div class="row">
 	
-	<div class="col-md-4 hvr-grow mt60 ml15 ml20">
+	<div class="col-md-4 hvr-grow adv-box1">
 		<div class="row box-head ">
 			<p class="text-center mt30"><span class="dimensions">217x825</span></p>
 		</div>
@@ -25,7 +25,7 @@
 			<p class="text-center mt20"><span class="choose">Choose Plan</span></p>
 		</div>
 	</div>
-	<div class="col-md-4 hvr-grow mt60 ml-10">
+	<div class="col-md-4 hvr-grow adv-box2 mt60 ml-10">
 		<div class="row box-head">
 			<p class="text-center mt30"><span class="dimensions">309x195</span></p>
 		</div>
@@ -43,7 +43,7 @@
 		</div>
 	</div>
 
-	<div class="col-md-4 hvr-grow mt60 ml-10">
+	<div class="col-md-4 hvr-grow adv-box3 mt60 ml-10">
 		<div class="row box-head">
 			<p class="text-center mt30"><span class="dimensions">979x115</span></p>
 		</div>

@@ -8,21 +8,17 @@
 	<div>
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs nav-justified" role="tablist">
-	    <li role="presentation" class="active tabs"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">PHOTOSHOP</a></li>
-	    <li role="presentation" class="tabs"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">ILLUSTRATOR</a></li>
-	    <li role="presentation" class="tabs"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">HTML/CSS</a></li>
-	    <li role="presentation" class="tabs"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SHORTCUTS</a></li>
+	    <li role="presentation" class=" tabs"><a href="#photoshop" aria-controls="home" role="tab" data-toggle="tab">PHOTOSHOP</a></li>
+	    <li role="presentation" class="tabs"><a href="#illustrator" aria-controls="profile" role="tab" data-toggle="tab">ILLUSTRATOR</a></li>
+	    <li role="presentation" class="tabs"><a href="#html" aria-controls="messages" role="tab" data-toggle="tab">HTML/CSS</a></li>
+	    <li role="presentation" class="tabs"><a href="#shortcut" aria-controls="settings" role="tab" data-toggle="tab">SHORTCUTS</a></li>
 	  </ul>
 
 	  <!-- Tab panes -->
 	  <div class="tab-content">
-	    <div role="tabpanel" class="tab-pane active" id="home">
-
-
+	    <div role="tabpanel" class="tab-pane active" id="photoshop">
 
 <div class="container">
-
-
 	<div class="row ">
 	<?php
 
@@ -37,7 +33,7 @@
 		<?php 
 
 	if ( get_field('columns') == '1' ){
-		echo '<div class="col-md-7 ">';
+		echo '<div class="col-md-7 col1">';
 	}
 	elseif (get_field('columns') == '2'){
 		echo '<div class="col-md-4 col2">';
@@ -55,7 +51,6 @@
 		echo '<div class="col-md-6 col6">';
 	}
 	?>
-	
 		
 		<figure class="cap-bot">
 		
@@ -102,17 +97,38 @@
 				<?php } ?>
 			</figcaption>
 
+
 			<!-- modal -->
 			<div class="modal fade" id="m<?php the_id();?>" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
 			    <div class="modal-dialog modal-lg">
 			        <div class="modal-content">
 			            <div class="modal-header">
-			            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&amp;times;</button>
+			            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
 			            <h4 class="modal-title" id="myModalLabel"><?php the_title(); ?></h4>
 			            </div>
 			            <div class="modal-body">
-			                <h3>...</h3>
-			            </div>
+			            	<?php 
+			            	if( have_rows('accordion') ): ?>
+							 
+							 <?php while ( have_rows('accordion') ) : the_row(); ?>
+			            	<div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
+								  <div class="panel panel-default">
+								    <div class="panel-heading" role="tab" id="heading-<?php echo $i; ?>">
+								      <h4 class="panel-title">
+								        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo $i; ?>" aria-expanded="false" aria-controls="collapseOne">
+								          <?php the_sub_field('steps') ; ?>
+								        </a>
+								      </h4>
+								    </div>
+								    <div id="collapse-<?php echo $i; ?>" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
+								      <div class="panel-body instructions">
+								        <?php the_sub_field('instructions') ; ?>
+								      </div>
+								    </div>
+								  </div>
+							</div>
+							<?php $i++; endwhile; ?>
+						<?php endif; ?>
 			            <div class="modal-footer">
 			                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			        	</div>
@@ -125,10 +141,8 @@
 			
 		</div>
 	</div><!--closes row-->
-	
 
 <?php endwhile; endif; ?>
-
 
 </div>
 </div>
@@ -137,7 +151,7 @@
 
 			<!--SECOND TAB-->
 		    
-		    <div role="tabpanel" class="tab-pane" id="profile">
+		    <div role="tabpanel" class="tab-pane" id="illustrator">
 		    	
 	<div class="container">
 
@@ -155,7 +169,7 @@
 		<?php 
 
 			if ( get_field('columns') == '1' ){
-				echo '<div class="col-md-7 ">';
+				echo '<div class="col-md-7 col1">';
 			}
 			elseif (get_field('columns') == '2'){
 				echo '<div class="col-md-5 col2">';
@@ -248,7 +262,7 @@
    </div>	
 		    
 			<!--THIRD TAB-->
-		    <div role="tabpanel" class="tab-pane" id="messages">
+		    <div role="tabpanel" class="tab-pane" id="html">
 	<div class="container">
 
 			<div class="row ">
@@ -265,7 +279,7 @@
 		<?php 
 
 			if ( get_field('columns') == '1' ){
-				echo '<div class="col-md-7 ">';
+				echo '<div class="col-md-7 col1">';
 			}
 			elseif (get_field('columns') == '2'){
 				echo '<div class="col-md-5 col2">';
@@ -359,7 +373,7 @@
 
 
 		    <!--FOURTH TAB-->
-		    <div role="tabpanel" class="tab-pane" id="settings">
+		    <div role="tabpanel" class="tab-pane" id="shortcut">
 		    	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					  <div class="panel panel-default">
 					    <div class="panel-heading" role="tab" id="headingOne">
@@ -373,9 +387,9 @@
 					      <div class="panel-body">
 					        <div class="table-responsive">
 					        	<table class="table table-bordered">
-					        		<tr class="grey">
+					        		<tr class="">
 					        			<td class="table-title">Result</td>
-					        			<td class="table-title">Windows</td>
+					        			<td class="table-title" width="5">Windows</td>
 					        			<td class="table-title">Mac</td>
 					        		</tr>
 					        		<tr>
@@ -527,8 +541,8 @@
 						      </div>
 						    </div>
 						  </div>
-						  <div class="panel panel-default">
-						    <div class="panel-heading" role="tab" id="headingThree">
+						  <div class="panel panel-default ">
+						    <div class="panel-heading mt-5" role="tab" id="headingThree">
 						      <h4 class="panel-title">
 						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 						          InDesign
@@ -549,8 +563,24 @@
 		</div>
 
 <?php if(have_posts()): while (have_posts()) : the_post(); ?>      
-
+	
 <?php endwhile; endif; ?>
+<div class="row hidden-sm hidden-xs">
+		<?php 
+
+		 $longads = new WP_Query([
+		 	'post_type'=>'longads',
+		 	'orderby' => 'rand',
+		 	'posts_per_page' => '1'
+		 	]);
+		 if ($longads->have_posts()) : while ($longads->have_posts()) : $longads->the_post();?>
+			<a href="<?php the_field('long_link'); ?>" target="_blank">
+		 		<img class="ad2" src="<?php the_field('long_image'); ?>" alt="">
+			</a>
+		 <?php endwhile; else: ?>
+		    <p>Sorry, no ads matched your criteria.</p>
+		<?php endif; ?>
+	</div>
 		<script>
 		
 		  </script>

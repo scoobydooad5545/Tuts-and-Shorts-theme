@@ -97,6 +97,10 @@ mail($to,$email_subject,$email_body,$headers);
 		  </div>
 		</form>
 	</div>
+
+	<div class="col-md-3 hidden-sm hidden-xs">
+		<?php get_sidebar(); ?>	
+	</div>
 </div>
 	
 
